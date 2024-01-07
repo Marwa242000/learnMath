@@ -8,7 +8,6 @@ var answer = 0;
 function generateEquation() {
     var num1 = Math.floor(Math.random() * 13);
     var num2 = Math.floor(Math.random() * 13);
-    var answer;
     if (num1 < num2) {
         answer = num2 - num1;
         document.getElementById("num2").innerHTML = num1;
