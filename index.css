@@ -1,0 +1,208 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Luckiest Guy", cursive;
+    background-color: #e6e6ea;
+}
+
+nav {
+    /* background-color: #ae445a; */
+    height: 80px;
+    /* background-color: #BEADFA; */
+    background-color: rgba(117, 107, 150, 0.9);
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+    padding: 16px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.types {
+    display: flex;
+    justify-content: flex-end;
+    gap: 16px;
+    font-size: 2rem;
+}
+
+.types li {
+    list-style: none;
+}
+
+.types li a {
+    text-decoration: none;
+    color: beige;
+}
+
+nav h1 {
+    font-size: 2rem;
+    color: beige;
+}
+
+.current a::after {
+    content: "_";
+    background-color: beige;
+    width: auto;
+    border-radius: 2px;
+    font-size: 4px;
+    display: block;
+}
+
+.equationSection {
+    display: flex;
+}
+
+.equation {
+    flex: 80%;
+    text-align: center;
+    background-color: cornsilk;
+    border-radius: 5px;
+    padding-top: 12%;
+    /* top right bottom left */
+    margin: 10px 10px 0 10px;
+    font-size: 4rem;
+}
+
+.answers {
+    flex: 20%;
+}
+
+#num1 {
+    color: #78C1F3;
+}
+
+#operator {
+    color: #8DDFCB;
+}
+
+#num2 {
+    color: #78C1F3;
+}
+
+.knowTrue .good {
+    display: none;
+}
+
+.knowTrue .try {
+    display: none;
+}
+
+.equation h2 {
+    display: inline;
+    color: #8DDFCB;
+    padding: 20px;
+}
+
+#answer {
+    color: #78C1F3;
+}
+
+.answers {
+    font-size: 4rem;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    transition: 4s;
+}
+
+
+#option1 {
+    background-color: #7ED7C1;
+    border-radius: 10px;
+    padding: 16px;
+    margin: 10px;
+}
+
+#option1:hover {
+    background-color: rgba(126, 215, 193, 0.5);
+}
+
+#option2 {
+    background-color: #83A2FF;
+    border-radius: 10px;
+    padding: 16px;
+    margin: 10px;
+}
+
+#option2:hover {
+    background-color: rgba(131, 162, 255, 0.5);
+}
+
+#option3 {
+    background-color: #FFB84C;
+    border-radius: 10px;
+    padding: 16px;
+    margin: 10px;
+}
+
+#option3:hover {
+    background-color: rgba(255, 184, 76, 0.9);
+}
+
+/* Your existing CSS code remains unchanged */
+
+/* Media query for smaller screens */
+@media screen and (max-width: 900px) {
+    nav {
+        height: auto;
+        padding: 10px;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .types {
+        font-size: 1.5rem;
+    }
+
+    nav h1 {
+        font-size: 1.8rem;
+        padding-bottom: 25px;
+    }
+
+    .equationSection {
+        flex-direction: column;
+    }
+
+    .equation {
+        padding: 10%;
+    }
+
+    .answers {
+        width: 100%;
+        display: flex;
+    }
+
+    .answers h2 {
+        flex: 1;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .equationSection {
+        flex-direction: column;
+    }
+
+    .equation {
+        padding: 10%;
+    }
+
+    .answers {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+}
