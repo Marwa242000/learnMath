@@ -55,7 +55,7 @@ optionOne.addEventListener('click', function () {
 })
 optionTwo.addEventListener('click', function () {
     if (optionTwo.innerHTML == answer) {
-        document.getElementById('answer').innerHTML = optionOne.innerHTML;
+        document.getElementById('answer').innerHTML = optionTwo.innerHTML;
         document.querySelector('.good').style.display = 'block';
     }
     else {
@@ -69,7 +69,7 @@ optionTwo.addEventListener('click', function () {
 })
 optionThree.addEventListener('click', function () {
     if (optionThree.innerHTML == answer) {
-        document.getElementById('answer').innerHTML = optionOne.innerHTML;
+        document.getElementById('answer').innerHTML = optionThree.innerHTML;
         document.querySelector('.good').style.display = 'block';
     }
     else {
