@@ -190,6 +190,9 @@ nav h1 {
 }
 
 @media screen and (max-width: 500px) {
+    .equation h2{
+padding: 0;
+font-size: 4rem;    }
     .equationSection {
         flex-direction: column;
     }
