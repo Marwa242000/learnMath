@@ -197,7 +197,10 @@ font-size: 4rem;    }
     .equationSection {
         flex-direction: column;
     }
-
+.types {
+        
+        gap:10px;
+    }
     .equation {
         padding: 10%;
     }
