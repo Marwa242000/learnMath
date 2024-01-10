@@ -164,6 +164,7 @@ nav h1 {
 
     .types {
         font-size: 1.5rem;
+        gap:10px;
     }
 
     nav h1 {
